@@ -2,7 +2,7 @@ from distutils.debug import DEBUG
 import os
 
 DATABASE = {
-    "engine": "sqlite+pysqlite",
+    "engine": "sqlite",
     "database": 'PokemonDB',
     "user": 'Test',
     "pass": 'PokemonTest123',

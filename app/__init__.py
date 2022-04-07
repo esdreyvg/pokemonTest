@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import logging
-from app.controllers.usersControllers import route_user
+# from app.controllers.usersControllers import route_user
 from app.controllers.pokemonsControllers import route_pokemon
 from config import LOG_FILENAME
 
@@ -27,7 +27,7 @@ def unhandled_exception(error):
     return render_template('500.html'), 500
 
 
-app.register_blueprint(route_user)
+# app.register_blueprint(route_user)
 app.register_blueprint(route_pokemon)
 
 logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
