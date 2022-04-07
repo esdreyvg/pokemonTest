@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Error</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'third/bootstrap/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'third/bootstrap/css/bootstrap-grid.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'third/bootstrap/css/bootstrap-reboot.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}"/>
+</head>
+<body>
+<div class="container">
+    <div class="offset-1 col-10 ">
+        <div class="text-center">
+            <img class="card-img" src="{{ url_for('static', filename = 'img/404-stop.jpg') }}"/>
+            <h1 class="h1 text-danger">Error 500!!</h1>
+            <h2 class="h1 text-danger"></h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'third/bootstrap/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript"
+        src="{{ url_for('static', filename = 'third/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
