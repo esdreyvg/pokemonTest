@@ -10,6 +10,6 @@ class Pokemon(Base):
 
     id = Column('sn_pokemon_id', Integer, primary_key=True)
     name = Column('sn_pokemon_name', String(50))
-    fktypepokemon = Column('sn_pokemon_lastname', String(50))
-    fkskills = Column('sn_pokemon_ci', Integer)
+    fktypepokemon = Column('sn_pokemon_type', Integer)
+    fkskills = Column('sn_pokemon_skills', Integer)
     enabled = Column('sn_pokemon_enabled', Integer, default=1)
